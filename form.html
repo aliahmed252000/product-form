@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <!-- nav + search bar  -->
+
+    <div class="topnav">
+        <div class="search-container">
+            <form>
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <img class="img" src="https://thumbs.dreamstime.com/b/user-icon-linear-gray-background-106603449.jpg">
+
+    <!-- form -->
+
+    <form>
+        <div class="container">
+            <h2>Product Information</h2>
+            <p style="color: royalblue;">CATEGORY DETAILS</p>
+            <hr>
+            <label for="email">Select Category</label>
+
+            <!-- dropdown -->
+
+            <select class="cate">
+                <option value="Select Category">Select Category</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="Pents">Pents</option>
+                <option value="Shirts">Shirts</option>
+                <option value="Bed sheets">Bed sheets</option>
+              </select>
+            <p style="color: royalblue;">PRODUCT DETAILS</p>
+            <hr>
+            <label class="one">Name</label>
+            <input type="text" placeholder="name" name="email" id="email" required>
+            <label class="two">Description</label>
+            <input type="text" placeholder="description" name="email" id="email" required>
+            <label class="th">Product Id</label>
+            <div class="three">
+                <input type="text" placeholder="product Id" name="email" id="email" required>
+            </div>
+            <label class="thr">Price</label>
+            <div class="thr">
+                <input type="number" placeholder="Rs" required>
+            </div>
+            <div class="inv">
+                <p style="color: royalblue;">INVENTORY DETAILS</p>
+                <hr>
+                <label class="one">Stock Quantity</label>
+                <input type="number" placeholder="0" required>
+                <label class="two">Product Weight</label>
+                <input type="number" placeholder="0" required>
+                <label class="th">Unit Of Measurement</label>
+                <div class="three">
+                    <input type="text" required>
+                </div>
+                <label class="thr">Product Dimiensions</label>
+                <div class="thr">
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="product">
+                <p style="color: royalblue;">PRODUCT AVAILABILITY</p>
+                <hr>
+                <label class="two">Availability</label>
+                <input type="text" required>
+            </div>
+            <div class="atti">
+                <p style="color: royalblue;">ATTRIBUTES / VARIANTS</p>
+                <hr>
+                <label class="two">Stock Quantity</label>
+                <input type="text" required>
+            </div>
+
+            <!-- button -->
+
+            <div>
+                <button class="button button5"> + Create Product</button>
+            </div>
+
+            <!-- image box -->
+
+            <div class="flex-container">
+                <p class="p1">PRODUCT IMAGE</p>
+                <div>Click here to add image <br><b>+</b></div>
+            </div>
+            <div class="flex">
+                <div></div>
+                <div></div>
+                <div>+</div>
+            </div>
+    </form>
+</body>
+</html>
